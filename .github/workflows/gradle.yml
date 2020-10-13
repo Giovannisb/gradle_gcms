@@ -13,6 +13,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./projeto_gradle/
 
     steps:
     - uses: actions/checkout@v2
@@ -24,8 +29,3 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-    
-    defaults:
-      run:
-        shell: bash
-        working-directory: ./gradle_gcms/

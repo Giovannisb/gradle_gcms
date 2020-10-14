@@ -7,6 +7,6 @@ public class Library {
     public boolean someLibraryMethod() {
     	System.out.println("mostrando detalhes");
     	System.out.println("teste");
-        return false;
+        return true;
     }
 }

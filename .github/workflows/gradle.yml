@@ -17,7 +17,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./gradle_gcms
+        working-directory: ./projeto_gcms
 
     steps:
     - uses: actions/checkout@v2
